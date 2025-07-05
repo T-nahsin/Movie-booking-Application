@@ -31,6 +31,10 @@ POST /admin/save-screen      → Add screens (Admin only)
 
 POST /admin/save-shows       → Add shows (Admin only)
 
+GET /movies/browse-movies       → browse movies as per your language,genre and city (Admin and user both)
+
+GET /user/get-showtime       → check the timing of movies as per theater and city (Admin and user both)
+
 All secured routes require Authorization: Bearer <JWT> in headers.
 
 ## ▶️ Run Locally
@@ -62,10 +66,6 @@ bookMovies/
 
 ## 🚧 Upcoming
 Seat booking
-
-Show timing module
-
-Admin dashboard
 
 Payment integration
 
