@@ -15,6 +15,7 @@ A simple backend for a BookMyShow-style movie booking system built with **Spring
 - Role-based access (Admin/User)
 - Add & filter movies (Admin/User)
 - Movie filtering by genre, language, and city
+- Fetch the showtime of your movies
 
 ## 📌 Endpoints
 POST /auth/register         → Register
