@@ -1,7 +1,7 @@
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://user:user@cluster0.un0kaso.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      uri: mongodb+srv://<username>:<password>@cluster0.un0kaso.mongodb.net/?retryWrites=true&w=majority
       database: MovieBooking
       auto-index-creation: true
 server:
