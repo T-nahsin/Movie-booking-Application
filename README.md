@@ -1,73 +1,138 @@
 # 🎬 Movie Booking App - Backend
 
-A simple backend for a BookMyShow-style movie booking system built with **Spring Boot 3.4.6**, **Java 21**, and **MongoDB Atlas**. It supports user authentication, movie filtering, and role-based access using JWT.
+This is a full-fledged backend service for a Movie Booking Application, inspired by BookMyShow. The application allows users to register, browse movies, select theatres and screens, view available seats, and book/cancel seats for shows.
 
-## 🔧 Tech Stack
-- Java 21
-- Spring Boot 3.4.6
-- MongoDB Atlas
-- Spring Security + JWT
-- Maven
+---
 
-## ✨ Features
-- User registration & login
-- JWT-based authentication
-- Role-based access (Admin/User)
-- Add & filter movies (Admin/User)
-- Movie filtering by genre, language, and city
-- Fetch the showtime of your movies
+## 🛠️ Tech Stack
 
-## 📌 Endpoints
-POST /auth/register         → Register
+- **Java 21**
+- **Spring Boot 3.4.6**
+- **MongoDB Atlas**
+- **Spring Security with JWT**
+- **Maven**
+- **Lombok**
+- **Postman** (for API testing)
+- **IntelliJ IDEA**
 
-POST /auth/login            → Login and receive JWT
+---
 
-POST /browse-movies         → Filter movies
+## ✅ Features
 
-POST /admin/save-movie       → Add movie (Admin only)
+### 👤 User
+- Register new users
+- Login using username & password
+- JWT token-based authentication
 
-POST /admin/save-theater       → Add theater (Admin only)
+### 🎞️ Movie Management
+- Add movies
+- Filter movies by language and genre
 
-POST /admin/save-screen      → Add screens (Admin only)
+### 🏢 Theatre & Screen Management
+- Create theatres
+- Add screens to theatres
 
-POST /admin/save-shows       → Add shows (Admin only)
+### 🪑 Seat Management
+- Add seats to screens (A1 to G3)
+- Define seat types (Silver, Gold)
 
-GET /movies/browse-movies       → browse movies as per your language,genre and city (Admin and user both)
+### 📅 Show Management
+- Assign movies to shows
+- Create shows with timing, price, and seats
 
-GET /user/get-showtime       → check the timing of movies as per theater and city (Admin and user both)
+### 🎟️ Booking System
+- Book specific seats for a show
+- Cancel booked seats
+- View available seats for a show
 
-All secured routes require Authorization: Bearer <JWT> in headers.
+---
 
-## ▶️ Run Locally
-Clone the repo:
+## 🧩 Project Structure
+
+bookMovies/
+├── controller/
+├── service/
+├── repository/
+├── entity/
+├── config/
+├── security/
+└── BookMoviesApplication.java
+
+yaml
+Copy
+Edit
+
+---
+
+## 🔐 Authentication
+
+- JWT Token is issued after successful login.
+- Include the token in the `Authorization` header as:
+Bearer <token>
+
+yaml
+Copy
+Edit
+
+---
+
+## 📦 Sample JSON (Create Seats)
+
+```json
+[
+{ "id": "A1", "seatType": "Silver" },
+{ "id": "B1", "seatType": "Silver" },
+{ "id": "F1", "seatType": "Gold" }
+]
+📬 API Endpoints
+Endpoint	Method	Description	Secured
+/auth/register	POST	Register a new user	❌
+/auth/login	POST	Login and receive JWT	❌
+/movies/add	POST	Add a new movie	✅
+/movies/browse	GET	Browse movies by filters	❌
+/admin/save-theater	POST	Create a theatre	✅
+/admin/create-screen	POST	Add screen to theatre	✅
+/admin/save-seats	POST	Add seats to screen	✅
+/admin/create	POST	Create a show	✅
+/admin/save-show	POST	Generate seats for a show	✅
+/user/book-seats	POST	Book selected seats	✅
+/user/cancel-booking	POST	Cancel selected seats	✅
+
+🧪 Testing
+Use Postman or Swagger (upcoming) to test endpoints. JWT must be added to headers for secured routes.
+
+🚀 Future Enhancements
+Add Swagger for API documentation
+
+Frontend using React or Flutter
+
+Email notifications
+
+Payment gateway integration
+
+Deploy on Heroku / Render
+
+📂 How to Run Locally
+Clone the repo
 
 bash
 Copy
 Edit
 git clone https://github.com/T-nahsin/Movie-booking-Application.git
-cd bookMovies
-Set your MongoDB URI in application.yml.
-
-Start the app:
+Navigate to the backend folder
 
 bash
 Copy
 Edit
+cd bookMovies
+Run the application
+
+arduino
+Copy
+Edit
 mvn spring-boot:run
-
-## 📂 Folder Structure
-
-bookMovies/
-├── controller/
-├── model/
-├── repository/
-├── service/
-├── config/
+Test via Postman or any REST client
 
 
-## 🚧 Upcoming
-Seat booking
-
-Payment integration
 
 ## Made with ❤️ by Nishant Singh
