@@ -84,7 +84,7 @@ Edit
 { "id": "B1", "seatType": "Silver" },
 { "id": "F1", "seatType": "Gold" }
 ]
-## 📬 API Endpoints
+### 📬 API Endpoints
 
 Endpoint	Method	Description	Secured
 /auth/register	POST	Register a new user	
