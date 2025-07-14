@@ -1,4 +1,5 @@
-# 🎬 Movie Booking Application 
+
+# 🎬 Movie Booking Application (BookMyShow Clone)
 
 A backend system built with Spring Boot for managing movie ticket bookings — inspired by BookMyShow. It supports user registration, movie browsing, show booking, email notifications, and more.
 
@@ -20,19 +21,19 @@ A backend system built with Spring Boot for managing movie ticket bookings — i
 
 ## 🛠️ Tech Stack
 
-- **Java 21**
-- **Spring Boot 3.4.6**
-- **MongoDB Atlas**
-- **Spring Security + JWT**
-- **Spring Mail**
-- **Swagger/OpenAPI**
-- **Lombok**, **Maven**
+- Java 21
+- Spring Boot 3.4.6
+- MongoDB Atlas
+- Spring Security + JWT
+- Spring Mail
+- Swagger/OpenAPI
+- Lombok, Maven
 
 ---
 
 ## 🔐 Authentication
 
-This project uses **JWT token-based authentication**. Once you log in, you’ll receive a token to authorize future requests.
+This project uses JWT token-based authentication. Once you log in, you’ll receive a token to authorize future requests.
 
 ---
 
@@ -45,43 +46,37 @@ Uses Spring Mail to send automated emails for:
 
 ---
 
-## 📄 API Documentation
+## 📘 API Documentation
 
-Swagger UI is enabled for all endpoints.
+Swagger UI is enabled for all endpoints:
 
+[http://localhost:8081/swagger-ui/index.html](http://localhost:8081/swagger-ui/index.html)
+
+---
+
+## 🚀 How to Run
+
+### Clone the repo:
 ```bash
-http://localhost:8080/swagger-ui/index.html
-📦 How to Run
-Clone the repo:
+git clone https://github.com/T-nahsin/Movie-booking-Application.git
+cd Movie-booking-Application
+```
 
-bash
-Copy
-Edit
-git clone https://github.com/your-username/movie-booking-app.git
-Navigate to the project folder:
+### Configure `application.properties` with:
+- MongoDB URI
+- JWT secret
+- Mail credentials
 
-bash
-Copy
-Edit
-cd movie-booking-app
-Configure application.properties:
-
-MongoDB URI
-
-JWT secret
-
-Email credentials
-
-Build and run:
-
-bash
-Copy
-Edit
+### Build and run:
+```bash
 ./mvnw spring-boot:run
-📂 Project Structure
-arduino
-Copy
-Edit
+```
+
+---
+
+## 📂 Project Structure
+
+```
 com.tnahsin.bookMovies
 │
 ├── controller/
@@ -91,44 +86,27 @@ com.tnahsin.bookMovies
 ├── dto/
 ├── config/
 └── utils/
-✅ Future Enhancements
-🔗 Integrate TMDB API for real-time movie data
-
-💳 Add payment gateway integration
-
-🤖 Add AI-powered movie recommendations
-
-☁️ Deploy on Heroku or Render
+```
 
 ---
 
-### 🙋‍♂️ Author
+## ✅ Future Enhancements
 
-Nishant Singh
-📧 Email
-🔗 LinkedIn
-🌐 Portfolio (if available)
+- 🔗 Integrate TMDB API for real-time movie data
+- 💳 Add payment gateway integration
+- 🤖 Add AI-powered movie recommendations
+- ☁️ Deploy on Heroku or Render
 
-📄 License
+---
+
+## 🙋‍♂️ Author
+
+**Nishant Singh**  
+🔗 [LinkedIn](https://www.linkedin.com/in/your-link/)  
+📧 nishant16405@gmail.com
+
+---
+
+## 📄 License
+
 This project is open-source and free to use.
-
-yaml
-Copy
-Edit
-
----
-
-### ✅ What to Do:
-- Replace the GitHub URL, email, LinkedIn with your actual links.
-- Add any additional features if you've done more (like role-based access).
-
-Want a **more advanced README with screenshots, endpoints table, or badges** too? I can generate that if you want to showcase it better!
-
-
-
-
-
-
-
-
-Ask ChatGPT
