@@ -1,5 +1,5 @@
 
-# 🎬 Movie Booking Application (BookMyShow Clone)
+# 🎬 Movie Booking Application 
 
 A backend system built with Spring Boot for managing movie ticket bookings — inspired by BookMyShow. It supports user registration, movie browsing, show booking, email notifications, and more.
 
