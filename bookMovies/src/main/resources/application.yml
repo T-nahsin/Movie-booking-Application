@@ -1,14 +1,14 @@
 spring:
   data:
     mongodb:
-      uri: mongodb+srv://user:user@cluster0.un0kaso.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      uri: mongodb+srv://<username:<password>@cluster0.un0kaso.mongodb.net/?retryWrites=true&w=majority
       database: MovieBooking
       auto-index-creation: true
   mail:
     host: smtp.gmail.com
     port: 587
     username: nishant16405@gmail.com
-    password: tuvq pkvk frdy qtmj
+    password: xxxx xxxx xxxx xxxx
     properties:
       mail:
         smtp:
