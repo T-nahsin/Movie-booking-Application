@@ -1,6 +1,20 @@
-# 🎬 Movie Booking App - Backend
+# 🎬 Movie Booking Application 
 
-This is a full-fledged backend service for a Movie Booking Application, inspired by BookMyShow. The application allows users to register, browse movies, select theatres and screens, view available seats, and book/cancel seats for shows.
+A backend system built with Spring Boot for managing movie ticket bookings — inspired by BookMyShow. It supports user registration, movie browsing, show booking, email notifications, and more.
+
+---
+
+## 🚀 Features
+
+- ✅ User Registration & Login (JWT Auth)
+- 🎟️ Browse Movies with Filters (Language, Genre)
+- 🕒 Add & Manage Shows with Date-Time & Pricing
+- 🏟️ Book & Cancel Show Tickets
+- 📩 Email Notifications for:
+  - Account Registration
+  - Show Booking Confirmation
+  - Booking Cancellation
+- 📘 API Documentation with Swagger UI
 
 ---
 
@@ -9,66 +23,94 @@ This is a full-fledged backend service for a Movie Booking Application, inspired
 - **Java 21**
 - **Spring Boot 3.4.6**
 - **MongoDB Atlas**
-- **Spring Security with JWT**
-- **Maven**
-- **Lombok**
-- **Postman** (for API testing)
-- **IntelliJ IDEA**
-
----
-
-## ✅ Features
-
-### 👤 User
-- Register new users
-- Login using username & password
-- JWT token-based authentication
-
-### 🎞️ Movie Management
-- Add movies
-- Filter movies by language and genre
-
-### 🏢 Theatre & Screen Management
-- Create theatres
-- Add screens to theatres
-
-### 🪑 Seat Management
-- Add seats to screens (A1 to G3)
-- Define seat types (Silver, Gold)
-
-### 📅 Show Management
-- Assign movies to shows
-- Create shows with timing, price, and seats
-
-### 🎟️ Booking System
-- Book specific seats for a show
-- Cancel booked seats
-- View available seats for a show
-
----
-
-## 🧩 Project Structure
-
-bookMovies/
-├── controller/
-├── service/
-├── repository/
-├── entity/
-├── config/
-├── security/
-└── BookMoviesApplication.java
-
-yaml
-Copy
-Edit
+- **Spring Security + JWT**
+- **Spring Mail**
+- **Swagger/OpenAPI**
+- **Lombok**, **Maven**
 
 ---
 
 ## 🔐 Authentication
 
-- JWT Token is issued after successful login.
-- Include the token in the `Authorization` header as:
-Bearer <token>
+This project uses **JWT token-based authentication**. Once you log in, you’ll receive a token to authorize future requests.
+
+---
+
+## 📬 Email Service
+
+Uses Spring Mail to send automated emails for:
+- Successful registration
+- Booking confirmation
+- Booking cancellation
+
+---
+
+## 📄 API Documentation
+
+Swagger UI is enabled for all endpoints.
+
+```bash
+http://localhost:8080/swagger-ui/index.html
+📦 How to Run
+Clone the repo:
+
+bash
+Copy
+Edit
+git clone https://github.com/your-username/movie-booking-app.git
+Navigate to the project folder:
+
+bash
+Copy
+Edit
+cd movie-booking-app
+Configure application.properties:
+
+MongoDB URI
+
+JWT secret
+
+Email credentials
+
+Build and run:
+
+bash
+Copy
+Edit
+./mvnw spring-boot:run
+📂 Project Structure
+arduino
+Copy
+Edit
+com.tnahsin.bookMovies
+│
+├── controller/
+├── service/
+├── entity/
+├── repository/
+├── dto/
+├── config/
+└── utils/
+✅ Future Enhancements
+🔗 Integrate TMDB API for real-time movie data
+
+💳 Add payment gateway integration
+
+🤖 Add AI-powered movie recommendations
+
+☁️ Deploy on Heroku or Render
+
+---
+
+### 🙋‍♂️ Author
+
+Nishant Singh
+📧 Email
+🔗 LinkedIn
+🌐 Portfolio (if available)
+
+📄 License
+This project is open-source and free to use.
 
 yaml
 Copy
@@ -76,52 +118,17 @@ Edit
 
 ---
 
-## 📦 Sample JSON (Create Seats)
+### ✅ What to Do:
+- Replace the GitHub URL, email, LinkedIn with your actual links.
+- Add any additional features if you've done more (like role-based access).
 
-```json
-[
-{ "id": "A1", "seatType": "Silver" },
-{ "id": "B1", "seatType": "Silver" },
-{ "id": "F1", "seatType": "Gold" }
-]
-
----
-
-🧪 Testing
-Use Postman or Swagger (upcoming) to test endpoints. JWT must be added to headers for secured routes.
-
-🚀 Future Enhancements
-Add Swagger for API documentation
-
-Frontend using React or Flutter
-
-Email notifications
-
-Payment gateway integration
-
-Deploy on Heroku / Render
-
-📂 How to Run Locally
-Clone the repo
-
-bash
-Copy
-Edit
-git clone https://github.com/T-nahsin/Movie-booking-Application.git
-Navigate to the backend folder
-
-bash
-Copy
-Edit
-cd bookMovies
-Run the application
-
-arduino
-Copy
-Edit
-mvn spring-boot:run
-Test via Postman or any REST client
+Want a **more advanced README with screenshots, endpoints table, or badges** too? I can generate that if you want to showcase it better!
 
 
 
-## Made with ❤️ by Nishant Singh
+
+
+
+
+
+Ask ChatGPT
