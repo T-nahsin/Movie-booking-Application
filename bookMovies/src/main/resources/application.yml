@@ -1,0 +1,25 @@
+spring:
+  data:
+    mongodb:
+      uri: mongodb+srv://user:user@cluster0.un0kaso.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0
+      database: MovieBooking
+      auto-index-creation: true
+  mail:
+    host: smtp.gmail.com
+    port: 587
+    username: nishant16405@gmail.com
+    password: tuvq pkvk frdy qtmj
+    properties:
+      mail:
+        smtp:
+          auth: true
+          starttls:
+            enable: true
+server:
+  port: 8081
+
+springdoc:
+  swagger-ui:
+    path: /swagger-ui-html
+  api-docs:
+    path: /v3/api-docs
