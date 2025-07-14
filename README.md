@@ -86,17 +86,17 @@ Edit
 ]
 📬 API Endpoints
 Endpoint	Method	Description	Secured
-/auth/register	POST	Register a new user	❌
-/auth/login	POST	Login and receive JWT	❌
-/movies/add	POST	Add a new movie	✅
-/movies/browse	GET	Browse movies by filters	❌
-/admin/save-theater	POST	Create a theatre	✅
-/admin/create-screen	POST	Add screen to theatre	✅
-/admin/save-seats	POST	Add seats to screen	✅
-/admin/create	POST	Create a show	✅
-/admin/save-show	POST	Generate seats for a show	✅
-/user/book-seats	POST	Book selected seats	✅
-/user/cancel-booking	POST	Cancel selected seats	✅
+/auth/register	POST	Register a new user	
+/auth/login	POST	Login and receive JWT	
+/movies/add	POST	Add a new movie	
+/movies/browse	GET	Browse movies by filters	
+/admin/save-theater	POST	Create a theatre	
+/admin/create-screen	POST	Add screen to theatre	
+/admin/save-seats	POST	Add seats to screen	
+/admin/create	POST	Create a show	
+/admin/save-show	POST	Generate seats for a show	
+/user/book-seats	POST	Book selected seats	
+/user/cancel-booking	POST	Cancel selected seats	
 
 🧪 Testing
 Use Postman or Swagger (upcoming) to test endpoints. JWT must be added to headers for secured routes.
