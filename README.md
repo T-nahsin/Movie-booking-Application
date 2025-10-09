@@ -1,5 +1,5 @@
 
-# 🎬 Movie Booking Application 
+# 🎬 Movie Booking Backend
 
 A backend system built with Spring Boot for managing movie ticket bookings — inspired by BookMyShow. It supports user registration, movie browsing, show booking, email notifications, and more.
 
@@ -110,3 +110,4 @@ com.tnahsin.bookMovies
 ## 📄 License
 
 This project is open-source and free to use.
+
